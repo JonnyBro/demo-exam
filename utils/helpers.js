@@ -5,7 +5,7 @@
  * @returns {number} - Количество завершенных заказов
  */
 export function countCompleted(repo) {
-	return repo.filter(o => o.status.toLowerCase() === "выполнено").length;
+	return repo.filter(o => o.status.toLowerCase() === "завершён").length;
 }
 
 /**
@@ -32,7 +32,7 @@ export function getProblemTypeStat(repo) {
  */
 export function getAverageTimeToComplete(repo) {
 	const times = repo
-		.filter(o => o.status.toLowerCase() === "выполнено" && o.endDate)
+		.filter(o => o.status.toLowerCase() === "завершён" && o.endDate)
 		.map(o => {
 			const endDate = new Date(o.endDate);
 			const startDate = new Date(o.startDate);

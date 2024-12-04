@@ -5,11 +5,11 @@
 ## Установка зависимостей
 
 ```sh
-npm i
+pnpm i
 ```
 
 ## Запуск проекта
 
 ```sh
-npm run start
+pnpm run start
 ```
